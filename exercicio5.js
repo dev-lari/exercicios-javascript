@@ -7,7 +7,6 @@
 
 const prompt = require('prompt-sync')()
 
-//ler o valor total de uma compra:
 let valorCompra = parseFloat(prompt('Informe o valor da sua compra: '))
 
 if (valorCompra >= 100.00 && valorCompra <= 299.99) {
