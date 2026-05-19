@@ -17,7 +17,7 @@ let cedula20 = Math.floor (valor / 20)
 valor = valor % 20
 
 let cedula10 = Math.floor (valor / 10)
-valor = valor % 20 
+valor = valor % 10 
 
 console.log (`Saque efetuado com sucesso! Você receberá: ${cedula100} notas de R$100, ${cedula50} notas de R$50, ${cedula20} notas de R$20 e ${cedula10} notas de R$10`)
 
