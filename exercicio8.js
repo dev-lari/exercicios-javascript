@@ -29,15 +29,16 @@ switch(tamanho) {
         console.log("Escolha uma opção válida!")
         break;
 }
-
-console.log ('-------------- OPÇÕES DE BORDA: --------------')
-console.log ('               1- Tradicional (Grátis)              ')
-console.log ('               2- Recheada (+ R$8,00)               ')
-
-let borda = parseInt(prompt('Escolha o tipo da borda:'))
-
-if (borda ===2) {
-    precoTotal += 8.00
+if (precoTotal > 0) {
+    console.log ('-------------- OPÇÕES DE BORDA: --------------')
+    console.log ('               1- Tradicional (Grátis)              ')
+    console.log ('               2- Recheada (+ R$8,00)               ')
+    
+    let borda = parseInt(prompt('Escolha o tipo da borda:'))
+    
+    if (borda ===2) {
+        precoTotal += 8.00
+    }
+    
+    console.log(`O valor total do pedido deu: R$${precoTotal}`)
 }
-
-console.log(`O valor total do pedido deu: R$${precoTotal}`)
