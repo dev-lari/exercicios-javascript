@@ -4,12 +4,12 @@
 //Perguntar a nota do aluno: 
 const prompt = require('prompt-sync')()
 
-// let nota = parseFloat(prompt("Informe uma nota: "));
+let nota = parseFloat(prompt("Informe uma nota: "));
 
-// if (nota >= 7) {
-//     console.log("Parabéns! Você foi aprovado(a)")
-// } else if (nota >= 5 && nota <= 6.9) {
-//     console.log("Você está de recuperação!")
-// } else {
-//     console.log ("Que pena! Você foi reprovado(a)")
-// }
+if (nota >= 7) {
+    console.log("Parabéns! Você foi aprovado(a)")
+} else if (nota >= 5 && nota <= 6.9) {
+    console.log("Você está de recuperação!")
+} else {
+    console.log ("Que pena! Você foi reprovado(a)")
+}
